@@ -1,0 +1,312 @@
+body {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 14px;
+    color: white;
+    background-color: #070d38;
+}
+
+section {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* PAGE-SKILLS
+======================*/
+
+.page-skills {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 285px;
+    margin-top: 190px;
+}
+
+.box-button li {
+    list-style-type: none;
+    padding-bottom: 52px;
+    padding-right: 124px;
+}
+
+.btn {
+    font-weight: 500;
+    color: #070d38;
+    text-transform: uppercase;
+    width: 630px;
+    height: 220px;
+    border-radius: 55px;
+    border: 5px solid white;
+}
+
+.btn:hover {
+    color: white;
+    background: #070d38;
+}
+
+.beginners {
+    font-size: 95px;
+}
+
+.intermediate {
+    font-size: 76px;
+}
+
+.advanced {
+    font-size: 95px;
+}
+
+.lvl {
+    font-family: 'Agustina400';
+    font-size: 139px;
+    color: yellow;
+    padding-left: 180px;
+    padding-top: 80px;
+    line-height: 1;
+}
+
+/* PAGE-ABOUT
+======================*/
+
+.page-about {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.box {
+    /* width: 950px;
+    height: 870px; */
+    background-color: #01031d;
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+    padding-bottom: 150px;
+}
+
+.logo {
+    height: 110px;
+    padding-top: 140px;
+    position: absolute;
+}
+
+.text-about {
+    padding-top: 300px;
+    text-align: justify;
+    text-align-last: center;
+}
+
+.p_about {
+    padding-left: 164px;
+    padding-right: 164px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.about-us h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 132px;
+    text-align: end;
+}
+
+.about-us {
+    padding-top: 200px;
+    padding-right: 100px;
+}
+
+/* Decorations
+======================*/
+
+@media (min-width: 1800px) and (max-width: 1817px) {
+    .box-button::after {
+        content: '';
+        position: absolute;
+        display: block;
+        background-image: url(../img/rect_dots.png);
+        width: 400px;
+        height: 493px;
+        right: 35px;
+        top: 967px
+    }
+
+    .lvl::before {
+        content: "";
+        position: absolute;
+        display: block;
+        background-image: url(../img/Eclipse_sel_lvl.png);
+        background-repeat: no-repeat;
+        width: 142px;
+        height: 136px;
+        right: 1020px;
+        top: 615px;
+    }
+
+    .about-us::before {
+        content: "";
+        position: absolute;
+        display: block;
+        background-image: url(../img/Eclipse_sel_lvl.png);
+        background-repeat: no-repeat;
+        width: 142px;
+        height: 136px;
+        right: 220px;
+        top: 1525px;
+    }
+
+    .about-us::after {
+        content: "";
+        position: absolute;
+        display: block;
+        background: url(../img/Dot.svg) no-repeat;
+        width: 25px;
+        height: 25px;
+        right: 330px;
+        top: 1542px;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+    .box-button::after {
+        content: "";
+        display: none;
+    }
+
+    .lvl::before {
+        content: "";
+        display: none;
+    }
+
+    .about-us::before {
+        content: "";
+        display: none;
+    }
+
+    .about-us::after {
+        content: "";
+        display: none;
+    }
+
+    body {
+        display: inline-block;
+    }
+
+    .box {
+        margin: 0 auto;
+    }
+
+    .page-skills {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .box-button li {
+        padding-right: 0px;
+    }
+
+    .box-button ul {
+        padding: 0 0 0 0;
+    }
+
+    .lvl {
+        padding: 0;
+    }
+
+    .select-level {
+        margin: 0 auto;
+    }
+
+    .page-about {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .about-us {
+        padding: 0;
+    }
+
+    .about-us h1 {
+        font-size: 100px;
+    }
+
+    .p_about {
+        padding-left: 75px;
+        padding-right: 75px;
+        font-size: 30px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1440px) {
+    .box-button::after {
+        content: "";
+        display: none;
+    }
+
+    .lvl::before {
+        content: "";
+        display: none;
+    }
+
+    .about-us::before {
+        content: "";
+        display: none;
+    }
+
+    .about-us::after {
+        content: "";
+        display: none;
+    }
+
+    body {
+        display: inline-block;
+    }
+
+    .box {
+        margin: 0 auto;
+    }
+
+    .page-skills {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+
+    .select-level {
+        align-items: flex-start;
+    }
+
+    .box-button li {
+        padding-right: 0px;
+    }
+
+    .box-button ul {
+        padding: 0 0 0 0;
+    }
+
+    .lvl {
+        padding: 0;
+    }
+
+    .select-level {
+        margin: 0 auto;
+        width: 400px;
+    }
+
+    .page-about {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .about-us {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .box-button {
+        margin: 0 auto;
+    }
+}
